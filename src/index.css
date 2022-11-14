@@ -34,4 +34,16 @@
   }
 
 
+  .showpope{
+    opacity: 1;
+    visibility: visible;
+    transform: skewY(0deg) translateY(10px);
+  }
+
+  .noshowpope{
+    opacity: 0;
+    visibility: hidden;
+    transform: skewY(3deg) translateY(-30px);
+  }
+
 }

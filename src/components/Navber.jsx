@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import logo from "../images/logo.png"
 import ham from '../images/menu.svg'
+import NavModal from './NavModal'
 
 const Navber = ({navlinks}) => {
+
+  const [show,setShow]=useState(false)
+  const trogalNav = ()=> setShow(!show)
   return (
     <>
       <header className='flex items-center justify-center w-auto h-auto absolute top-7 left-0 right-0'>
@@ -28,12 +32,13 @@ const Navber = ({navlinks}) => {
           </ul>
 
           <ul className=' hidden lg:flex'>
-            <li>
+            <li onClick={trogalNav}>
               <img src={ham} alt="" />
             </li>
           </ul>
         </nav>
       </header>
+      <NavModal navlinks={navlinks} show={show}/>
     </>
   )
 }
