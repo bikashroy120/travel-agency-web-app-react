@@ -26,6 +26,10 @@
     @apply bg-gradient-to-b from-white to-slate-100 shadow-slate-100 rounded-full text-lg sm:text-sm px-9 py-1.5 transition-all duration-200 active:scale-90 text-black sm:w-48;
   }
 
+  .scroll-hidden::-webkit-scrollbar{
+    display: none !important;
+  }
+
 
   /* drop-shaddow-emrald */
 
