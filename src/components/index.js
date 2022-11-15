@@ -4,3 +4,4 @@
  export {default as Memory} from "./Memory.jsx"
  export {default as Explor} from "./Explor.jsx"
  export {default as Brand} from "./Brand"
+ export {default as Pricings} from "./Pricings"
